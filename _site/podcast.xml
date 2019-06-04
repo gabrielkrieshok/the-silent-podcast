@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xml:lang="en-us">
+
+    <channel>
+		<atom:link href="http://thesilentpodcast.com/podcast.rss" rel="self" type="application/rss+xml" />
+		<title>The Silent Podcast</title>
+		<link>http://thesilentpodcast.com</link>
+		<language>en-us</language>
+        <copyright>&#xA9; 2019 The Silent Podcast</copyright>
+		<itunes:subtitle>10 minutes of stillness in your day</itunes:subtitle>
+        <itunes:author>Gabriel Krieshok</itunes:author>
+		<itunes:summary>The Silent Podcast is a 10-minute pocket of stillness in your day. Listen to it at a set time every day, in the middle of a busy commute, or when you simply need a break from all of the hustle and bustle of distraction around you.</itunes:summary>
+        <description>The Silent Podcast is a 10-minute pocket of stillness in your day. Listen to it at a set time every day, in the middle of a busy commute, or when you simply need a break from all of the hustle and bustle of distraction around you.</description>
+		<webMaster>gabriel.krieshok@gmail.com (Gabriel Krieshok)</webMaster>
+        <itunes:owner>
+			<itunes:name>Gabriel Krieshok</itunes:name>
+			<itunes:email>gabriel.krieshok@gmail.com</itunes:email>
+		</itunes:owner>
+        <itunes:image href="http://thesilentpodcast.com/images/logo.png" />
+		<itunes:category text="Health" />
+		    <itunes:category text="Self-Help" />
+        <itunes:category text="Fitness &amp; Nutrition" />
+        <itunes:category text="Technology" />
+        <itunes:explicit>no</itunes:explicit>
+		
+
+        <item>
+            <title>Episode 1</title>
+            <itunes:author>Gabriel Krieshok</itunes:author>
+            <itunes:subtitle>The Silent Podcast: Episode 1</itunes:subtitle>
+            <itunes:summary>Episode 1 — January 12, 2018</itunes:summary>
+            <itunes:image href="http://thesilentpodcast.com/images/logo.png" />
+            <enclosure url="https://thesilentpodcast.s3.amazonaws.com/1-20180112.mp3" length="" type="audio/mp3"/>
+            <guid isPermaLink="true">http://thesilentpodcast.com/2018/episode-1.html</guid>
+            <pubDate>Fri, 12 Jan 2018 12:00:00 -0500</pubDate>
+            <itunes:duration>10:00</itunes:duration>
+            <itunes:explicit>no</itunes:explicit>
+            <description>Episode 1 — January 12, 2018 Welcome to the Silent Podcast, a 10-minute pocket of stillness in your day. Show Notes Available at http://thesilentpodcast.com/2018/episode-1.html.</description>
+            <itunes:keywords>Mindfulness, silence</itunes:keywords>
+            <itunes:block>no</itunes:block>
+		</item>
+
+        <item>
+            <title>Introduction</title>
+            <itunes:author>Gabriel Krieshok</itunes:author>
+            <itunes:subtitle>The Silent Podcast: Introduction</itunes:subtitle>
+            <itunes:summary>Introduction to the podcast</itunes:summary>
+            <itunes:image href="http://thesilentpodcast.com/images/logo.png" />
+            <enclosure url="https://thesilentpodcast.s3.amazonaws.com/0-20180112-Introduction.mp3" length="" type="audio/mp3"/>
+            <guid isPermaLink="true">http://thesilentpodcast.com/2018/episode-0.html</guid>
+            <pubDate>Fri, 12 Jan 2018 11:00:00 -0500</pubDate>
+            <itunes:duration>02:00</itunes:duration>
+            <itunes:explicit>no</itunes:explicit>
+            <description>Introduction to the podcast Introduction to the podcast Show Notes Available at http://thesilentpodcast.com/2018/episode-0.html.</description>
+            <itunes:keywords>Mindfulness, silence</itunes:keywords>
+            <itunes:block>no</itunes:block>
+		</item>
+
+	</channel>
+</rss>
