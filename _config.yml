@@ -13,7 +13,7 @@ subtitle: "10 minutes of stillness in your day"
 lang: en-us
 author: Gabriel Krieshok
 copyright: "&#xA9; 2019"
-baseurl: "thesilentpodcast" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://thesilentpodcast.com" # the base hostname & protocol for your site
 twitter_username: gabrielkrieshok
 github_username:  gabrielkrieshok
