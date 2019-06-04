@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<div class="logo"><img src="{{ site.baseurl }}/images/logo-no-text.png" height="300px"></div>
+<div class="row">
+<div class="ten columns offset-by-one">
+<p>Welcome to <strong>The Silent Podcast</strong>, a 10-minute pocket of stillness in your day.</p>
+<p>Listen to it at a set time every day, in the middle of a busy commute, or when you simply need a break from all of the hustle and bustle of distraction around you.</p>
+<p>I always appreciate your feedback and you can get in touch with me on <a href="http://twitter.com/gabrielkrieshok">Twitter</a>!</p>
+
+<div class="center-content">
+<div class="button large">
+    <a href="http://127.0.0.1:4000/podcast.xml">RSS Feed</a>
+</div>
+<div class="button large">
+    <a href="https://overcast.fm/itunes1334758155/the-silent-podcast">Overcast</a>
+</div>
+<div class="button large">
+    <a href="https://podcasts.apple.com/us/podcast/the-silent-podcast/id1334758155?mt=2">iTunes</a>
+</div>
+</div>
+</div>
+</div>
+<div class="card-grid">    
+    {% assign first_post = site.posts.first %}
+    <div class="cards first">
+        <h1 class="label reversed">Latest Episode</h1>
+        <div class="center-content">
+            <div class="seven columns">
+                <h2><a class="post-link" href="{{ first_post.url | prepend: site.baseurl }}">{{ first_post.title }}</a></h2>
+                
+                <p class="meta">{{ first_post.date | date: "%b %-d, %Y" }}</p>
+                <p>{{ first_post.summary }} </p> 
+            </div>
+            <div class="four columns center-content">
+                <a href="{{ first_post.file }}" class="button button-primary" download="{{ first_post.title }}">Download Now</a>    
+            </div>
+        </div>            
+        </div>
+    
+    {% for post in site.posts offset:1 %}
+        <div class="cards">
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+        <p>{{ post.summary }} </p>
+        </div>
+    {% endfor %}
+    
+</div>
+
+<div class="container center-content extra-padding">
+</div>
