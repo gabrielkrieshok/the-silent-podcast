@@ -7,12 +7,13 @@
 
 # Site settings
 title: The Silent Podcast
-email: gabriel.krieshok@gmail.com
+summary: "10 minutes of stillness in your day."
 description: "The Silent Podcast is a 10-minute pocket of stillness in your day. Listen to it at a set time every day, in the middle of a busy commute, or when you simply need a break from all of the hustle and bustle of distraction around you."
-subtitle: "10 minutes of stillness in your day"
+subtitle: "10 minutes of stillness in your day."
 lang: en-us
 author: Gabriel Krieshok
-copyright: "&#xA9; 2019"
+email: gabriel.krieshok@gmail.com
+copyright: "2019"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://thesilentpodcast.com" # the base hostname & protocol for your site
 twitter_username: gabrielkrieshok

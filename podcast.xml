@@ -9,10 +9,10 @@
 		<title>{{ site.title }}</title>
 		<link>{{ site.url }}{{ site.baseurl }}</link>
 		<language>{{ site.lang }}</language>
-        <copyright>&#xA9; {{ site.time | date: "%Y" }} {{ site.title }}</copyright>
+        <copyright>{{ site.time | date: "%Y" }} {{ site.title }}</copyright>
 		<itunes:subtitle>{{ site.subtitle | xml_escape }}</itunes:subtitle>
         <itunes:author>{{ site.author }}</itunes:author>
-		<itunes:summary>{{ site.description | xml_escape }}</itunes:summary>
+		<itunes:summary>{{ site.summary | xml_escape }}</itunes:summary>
         <description>{{ site.description | xml_escape }}</description>
 		<webMaster>{{ site.email }} ({{ site.author }})</webMaster>
         <itunes:owner>
@@ -20,10 +20,9 @@
 			<itunes:email>{{ site.email }}</itunes:email>
 		</itunes:owner>
         <itunes:image href="{{ site.url }}{{ site.baseurl }}/images/logo.png" />
-		<itunes:category text="Health" />
-		    <itunes:category text="Self-Help" />
-        <itunes:category text="Fitness &amp; Nutrition" />
-        <itunes:category text="Technology" />
+		<itunes:category text="Health"/>
+		    <itunes:category text="Self-Help"/>
+            <itunes:category text="Fitness &amp; Nutrition"/>
         <itunes:explicit>no</itunes:explicit>
 		
 {% for post in site.posts %}
@@ -32,15 +31,14 @@
             <itunes:author>{{ site.author }}</itunes:author>
             <itunes:subtitle>{{ site.title | xml_escape }}: {{ post.title | xml_escape }}</itunes:subtitle>
             <itunes:summary>{{ post.summary | xml_escape }}</itunes:summary>
+            <description>{{ post.summary | xml_escape }}</description>
             <itunes:image href="{{ site.url }}/images/logo.png" />
-            <enclosure url="{{ post.file }}" length="{{ post.length }}" type="audio/mp3"/>
+            <enclosure url="{{ post.file }}" type="audio/mp3"/>
             <guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ post.url }}</guid>
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
             <itunes:duration>{{ post.duration }}</itunes:duration>
             <itunes:explicit>{{ post.explicit }}</itunes:explicit>
-            <description>{{ post.summary | xml_escape }} {{ post.description | xml_escape }} Show Notes Available at {{ site.url }}{{ site.baseurl }}{{ post.url }}.</description>
             <itunes:keywords>{{ post.keywords }}</itunes:keywords>
-            <itunes:block>{{ post.block }}</itunes:block>
 		</item>
 {% endfor %}
 	</channel>
