@@ -27,6 +27,8 @@ timezone: America/New_York
 #Setup for Pages
 include: ['_pages']
 
+future: false
+
 # Build settings
 markdown: kramdown
 
