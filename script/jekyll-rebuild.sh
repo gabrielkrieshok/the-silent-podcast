@@ -18,6 +18,9 @@ git clone https://${GH_TOKEN}@github.com/gabrielkrieshok/thesilentpodcast --bran
 
 # build with Jekyll into "_site"
 # exec jekyll build
+# bundle exec rake site:deploy
+
+bundle exec rake post
 
 # push empty commit
 cd _site

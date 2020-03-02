@@ -1,0 +1,31 @@
+desc 'create a new draft post'
+task :post do
+    require 'date'
+#   title = ENV['title']
+#   slug = "#{Date.today}-#{title.downcase.gsub(/[^\w]+/, '-')}"
+  slug = "#{Date.today}-1"
+  file = File.join(
+    File.dirname(__FILE__),
+    '_posts',
+    slug + '.md'
+  )
+
+  t = Time.now()
+  cleanDate = t.strftime("%B %-d, %Y")
+  File.open(file, "w") do |f|
+    f << <<-EOS.gsub(/^    /, '')
+    ---
+    layout: post
+    title: "#{cleanDate}"
+    date: #{Date.today} 06:00:00 -0500
+    file: "https://thesilentpodcast.s3.amazonaws.com/silent-podcast-episode.mp3"
+    summary: "The Silent Podcast is a 10-minute pocket of stillness in your day. Listen to it at a set time every day, in the middle of a busy commute, or when you simply need a break from all of the hustle and bustle of distraction around you."
+    duration: "10:00"
+    explicit: "no"
+    keywords: "mindfulness, silence"
+    ---
+    EOS
+  end
+
+  system ("#{ENV['EDITOR']} #{file}")
+end
