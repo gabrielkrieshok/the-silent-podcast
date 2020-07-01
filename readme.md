@@ -6,5 +6,4 @@ The site design was created using [Jekyll Skeleton](https://github.com/timklapdo
 
 ```bash
 bundle exec jekyll serve
-yarn build
 ```
