@@ -10,7 +10,7 @@ exclude: [vendor]
 # branch whitelist, only for GitHub Pages
 branches:
   only:
-  - main     # test the master branch
+  - main     # test the main branch
 
 cache: bundler # caching bundler gem packages will speed up build
 
