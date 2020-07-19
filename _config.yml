@@ -15,17 +15,17 @@ author: Gabriel Krieshok
 email: gabriel.krieshok@gmail.com
 copyright: "2020"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://thesilentpodcast.com" # the base hostname & protocol for your site
+url: "https://thesilentpodcast.com" # the base hostname & protocol for your site
 twitter_username: gabrielkrieshok
 github_username:  gabrielkrieshok
 
-permalink: /:year/:title.html
+# permalink: /:year/:title.html
 
 #Timezone
 timezone: America/New_York
 
 #Setup for Pages
-include: ['_pages']
+# include: ['_pages']
 
 future: false
 
@@ -33,4 +33,4 @@ future: false
 markdown: kramdown
 
 #Exclude local build settings
-exclude: ['readme.md', 'Gemfile.lock', 'Gemfile']
+# exclude: ['readme.md', 'Gemfile.lock', 'Gemfile']
