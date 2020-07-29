@@ -1,16 +1,21 @@
-desc 'create a new draft post'
-task :post do
+# coding: utf-8
+require 'jekyll'
+
+# Rake Jekyll tasks
+task :build do
+
+  desc 'create a new draft post'
+
   require 'date'
   require 'active_support/core_ext'
 
   $i = 0
-  $days = 30
+  $days = 5
 
   while $i < $days  do
 
-  slug = "#{Date.today + $i.days}-episode"
-  cleanDate = (Date.today + $i.days).strftime("%B %-d, %Y")
-  puts("cleanDate #{cleanDate}" )
+  slug = "#{Date.today - $i.days}-episode"
+  cleanDate = (Date.today - $i.days).strftime("%B %-d, %Y")
 
   file = File.join(
     File.dirname(__FILE__),
@@ -22,10 +27,10 @@ task :post do
     f << <<-EOS.gsub(/^    /, '')
     ---
     layout: post
-    title: "#{cleanDate}"
-    date: #{Date.today + $i.days} 06:00:00 -0500
+    title: "The Silent Podcast — #{cleanDate}"
+    date: #{Date.today - $i.days} 06:00:00 -0500
     file: "https://thesilentpodcast.s3.amazonaws.com/silent-track.mp3"
-    summary: "The Silent Podcast is a 10-minute pocket of stillness in your day. Listen to it at a set time every day, in the middle of a busy commute, or when you simply need a break from all of the hustle and bustle of distraction around you."
+    summary: "10 minutes of stillness for #{cleanDate}"
     duration: "10:00"
     explicit: "no"
     keywords: "mindfulness, silence"
@@ -34,7 +39,11 @@ task :post do
   end
 
   system ("#{ENV['EDITOR']} #{file}")
-  puts("Creating #$i" )
+  puts("Creating Post for #{cleanDate}")
+
   $i +=1
 end
+
+  puts 'Building site...'
+  Jekyll::Commands::Build.process(profile: true)
 end

@@ -5,5 +5,5 @@ The site has been built using Jekyll. Individual posts for each episode power th
 The site design was created using [Jekyll Skeleton](https://github.com/timklapdor/jekyll-skeleton).
 
 ```bash
-bundle exec jekyll serve
+bundle exec rake build or bundle exec jekyll serve
 ```
