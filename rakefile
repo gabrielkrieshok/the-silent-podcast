@@ -1,3 +1,5 @@
+# command 'bundle exec rake build'
+
 # coding: utf-8
 require 'jekyll'
 
@@ -12,6 +14,11 @@ task :build do
   $i = 0
   $days = 5
 
+  Dir.foreach('_posts') do |f|
+    fn = File.join('_posts', f)
+    File.delete(fn) if f != '.' && f != '..'
+  end
+
   while $i < $days  do
 
   slug = "#{Date.today - $i.days}-episode"
@@ -22,6 +29,7 @@ task :build do
     '_posts',
     slug + '.md'
   )
+  
 
   File.open(file, "w") do |f|
     f << <<-EOS.gsub(/^    /, '')
