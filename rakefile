@@ -36,6 +36,8 @@ task :build do
     ---
     layout: post
     title: "The Silent Podcast — #{cleanDate}"
+    title: ""
+    image: "/images/logo.png"
     date: #{Date.today - $i.days} 06:00:00 -0500
     file: "https://thesilentpodcast.s3.amazonaws.com/silent-track.mp3"
     summary: "10 minutes of stillness for #{cleanDate}"
