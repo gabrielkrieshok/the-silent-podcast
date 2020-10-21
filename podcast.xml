@@ -2,44 +2,45 @@
 
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:itunes="https://www.itunes.com/dtds/podcast-1.0.dtd" xml:lang="{{ site.lang }}">
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
 
-    <channel>
-		<atom:link href="{{ site.url }}/podcast.rss" rel="self" type="application/rss+xml" />
-		<title>{{ site.title }}</title>
-		<link>{{ site.url }}{{ site.baseurl }}</link>
-		<language>{{ site.lang }}</language>
-        <copyright>{{ site.time | date: "%Y" }} {{ site.title }}</copyright>
-		<itunes:subtitle>{{ site.summary | xml_escape }}</itunes:subtitle>
-        <itunes:author>{{ site.author }}</itunes:author>
-		<itunes:summary>{{ site.summary | xml_escape }}</itunes:summary>
-        <description>{{ site.description | xml_escape }}</description>
-		<webMaster>{{ site.email }} ({{ site.author }})</webMaster>
-        <itunes:owner>
-			<itunes:name>{{ site.author }}</itunes:name>
-			<itunes:email>{{ site.email }}</itunes:email>
-		</itunes:owner>
-        <itunes:image href="{{ site.url }}{{ site.baseurl }}/images/logo.png" />
-		<itunes:category text="Health"/>
-		    <itunes:category text="Self-Help"/>
-            <itunes:category text="Fitness &amp; Nutrition"/>
-        <itunes:explicit>no</itunes:explicit>
+<channel>
+
+<!-- <atom:link href="{{ site.url }}/podcast.rss" rel="self" type="application/rss+xml" /> -->
+<title>{{ site.title }}</title>
+<link>{{ site.url }}{{ site.baseurl }}</link>
+<language>{{ site.lang }}</language>
+<itunes:subtitle>{{ site.summary | xml_escape }}</itunes:subtitle>
+<itunes:author>{{ site.author }}</itunes:author>
+<itunes:summary>{{ site.description | xml_escape }}</itunes:summary>
+<description>{{ site.description | xml_escape }}</description>
+<copyright>{{ site.time | date: "%Y" }} {{ site.title }}</copyright>
+<webMaster>{{ site.email }} ({{ site.author }})</webMaster>
+<itunes:owner>
+    <itunes:name>{{ site.author }}</itunes:name>
+    <itunes:email>{{ site.email }}</itunes:email>
+</itunes:owner>
+<itunes:explicit>no</itunes:explicit>
+<itunes:image href="{{ site.url }}{{ site.baseurl }}/images/logo.jpg" />
+<itunes:category text="Health &amp; Fitness">
+    <itunes:category text="Mental Health" />
+</itunes:category>
 		
 {% for post in site.posts %}
-        <item>
-            <title>{{ post.title | xml_escape }}</title>
-            <itunes:author>{{ site.author }}</itunes:author>
-            <itunes:subtitle>{{ site.title | xml_escape }}: {{ post.title | xml_escape }}</itunes:subtitle>
-            <itunes:summary>{{ post.summary | xml_escape }}</itunes:summary>
-            <description>{{ post.summary | xml_escape }}</description>
-            <itunes:image href="{{ site.url }}/images/logo.png" />
-            <enclosure url="{{ post.file }}" type="audio/mp3"/>
-            <guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ post.url }}</guid>
-            <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-            <itunes:duration>{{ post.duration }}</itunes:duration>
-            <itunes:explicit>{{ post.explicit }}</itunes:explicit>
-            <itunes:keywords>{{ post.keywords }}</itunes:keywords>
-		</item>
+<item>
+    <title>{{ post.title | xml_escape }}</title>
+    <itunes:summary>{{ post.summary | xml_escape }}</itunes:summary>
+    <description>{{ post.summary | xml_escape }}</description>
+    <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
+    <itunes:image href="{{ site.url }}{{ site.baseurl }}/images/logo.jpg" />
+    <enclosure url="{{ post.file }}" type="audio/mp3" length="4972465"/>
+    <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+    <itunes:duration>{{ post.duration }}</itunes:duration>
+    <itunes:explicit>{{ post.explicit }}</itunes:explicit>
+    <itunes:keywords>{{ post.keywords }}</itunes:keywords>
+    <guid>{{ site.url }}{{ site.baseurl }}{{ post.url }}</guid>
+</item>
 {% endfor %}
-	</channel>
+
+</channel>
 </rss>
