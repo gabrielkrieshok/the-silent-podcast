@@ -38,7 +38,7 @@ task :build do
     title: "The Silent Podcast — #{cleanDate}"
     date: #{Date.today - $i.days} 06:00:00 -0500
     file: "https://thesilentpodcast.s3.amazonaws.com/silent-track-#{$i}.mp3"
-    summary: "10 minutes of stillness for #{cleanDate}"
+    summary: "10 minutes of stillness for #{cleanDate}."
     ---
     EOS
   end
