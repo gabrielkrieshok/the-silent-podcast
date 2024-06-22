@@ -16,9 +16,9 @@ mkdir _site
 # clone remote repo to "_site"
 git clone https://${GH_TOKEN}@github.com/gabrielkrieshok/thesilentpodcast --branch main _site
 
-# build with Jekyll into "_site"
-# exec jekyll build
-# bundle exec rake site:deploy
+  # build with Jekyll into "_site"
+  # exec jekyll build
+  # bundle exec rake site:deploy
 
 # bundle exec rake post
 
