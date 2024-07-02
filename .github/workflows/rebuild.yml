@@ -39,12 +39,12 @@ jobs:
     - name: Commit and push changes
       run: |
         cd _site
+        git init
+        git remote add origin https://${GH_TOKEN}@github.com/gabrielkrieshok/thesilentpodcast.git
         git config user.email "gabriel.krieshok@gmail.com"
         git config user.name "gabrielkrieshok"
-        git commit -a -m "rebuild pages" --allow-empty
-        git push origin main
-        # Remove last empty commit
-        git reset HEAD~
+        git add .
+        git commit -m "rebuild pages"
         git push origin main --force
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
