@@ -12,7 +12,7 @@ task :build do
   require 'active_support/core_ext'
 
   $i = 0
-  $days = 5
+  $days = 30
 
   Dir.foreach('_posts') do |f|
     fn = File.join('_posts', f)
