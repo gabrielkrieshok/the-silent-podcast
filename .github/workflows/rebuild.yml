@@ -21,10 +21,11 @@ jobs:
       with:
         ruby-version: 2.6.3
 
+    - name: Install Bundler
+      run: gem install bundler -v 2.4.22
+
     - name: Install dependencies
-      run: |
-        gem install bundler
-        bundle install
+      run: bundle install
 
     - name: Run Jekyll rebuild script
       run: |
