@@ -12,6 +12,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    if: github.event_name == 'schedule' || github.event.head_commit.message != 'rebuild pages'
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
