@@ -29,22 +29,23 @@ jobs:
     - name: Install dependencies
       run: bundle install
 
+    - name: Clone repository into _site
+      run: git clone https://${GH_TOKEN}@github.com/gabrielkrieshok/thesilentpodcast.git _site
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
     - name: Run Jekyll rebuild script
       run: |
         chmod +x ./script/jekyll-rebuild.sh
         ./script/jekyll-rebuild.sh
-      env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
     - name: Commit and push changes
       run: |
         cd _site
-        git init
-        git remote add origin https://${GH_TOKEN}@github.com/gabrielkrieshok/thesilentpodcast.git
         git config user.email "gabriel.krieshok@gmail.com"
         git config user.name "gabrielkrieshok"
         git add .
-        git commit -m "rebuild pages"
-        git push origin main --force
+        git commit -m "rebuild pages" || echo "No changes to commit"
+        git push origin main
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
