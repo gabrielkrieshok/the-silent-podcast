@@ -1,0 +1,47 @@
+name: Rebuild Jekyll Site
+
+on:
+  schedule:
+    # Runs at 00:00 UTC every day
+    - cron: "0 0 * * *"
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6.3
+
+    - name: Install dependencies
+      run: |
+        gem install bundler
+        bundle install
+
+    - name: Run Jekyll rebuild script
+      run: |
+        chmod +x ./script/jekyll-rebuild.sh
+        ./script/jekyll-rebuild.sh
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+    - name: Commit and push changes
+      run: |
+        cd _site
+        git config user.email "gabriel.krieshok@gmail.com"
+        git config user.name "gabrielkrieshok"
+        git commit -a -m "rebuild pages" --allow-empty
+        git push origin main
+        # Remove last empty commit
+        git reset HEAD~
+        git push origin main --force
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
