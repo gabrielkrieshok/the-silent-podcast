@@ -1,5 +1,5 @@
 [build]
-  command = "bundle exec rake build"
+  command = "bundle exec rake build --trace"
   publish = "_site"
 
 [context.production.environment]
