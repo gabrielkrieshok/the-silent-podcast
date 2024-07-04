@@ -3,7 +3,7 @@
 # coding: utf-8
 require 'jekyll'
 require 'date'
-require 'active_support'
+require 'active_support' --trace
 require 'active_support/core_ext'
 
 # Rake Jekyll tasks
