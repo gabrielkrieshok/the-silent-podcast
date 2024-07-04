@@ -21,4 +21,4 @@ future: false
 markdown: kramdown
 
 # Exclude local build settings
-exclude: ['readme.md', 'Gemfile.lock', 'Gemfile', 'rakefile']
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'rakefile', 'vendor', 'node_modules']
