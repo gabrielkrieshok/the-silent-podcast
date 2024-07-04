@@ -47,7 +47,7 @@ GEM
     mercenary (0.3.6)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (6.0.0)
+    public_suffix (5.1.1)
     rake (13.0.6)
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
@@ -71,6 +71,7 @@ DEPENDENCIES
   jekyll (~> 3.9)
   jekyll-feed (~> 0.6)
   kramdown-parser-gfm
+  public_suffix (~> 5.1.1)
   rake (~> 13.0.1)
   tzinfo-data
   webrick (~> 1.7)

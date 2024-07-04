@@ -34,8 +34,7 @@ gem "rake", "~> 13.0.1"
 gem "webrick", "~> 1.7"
 # gem 'activesupport', '~> 6.1' # Pin a compatible version of activesupport
 gem "kramdown-parser-gfm"
-
-# gem 'public_suffix', "~> 5.1.1"
+gem 'public_suffix', "~> 5.1.1"
 
 # gem install bundler -v 2.2.22
 # bundle _2.2.22_ install
