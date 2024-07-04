@@ -10,9 +10,8 @@
 <title>{{ site.title }}</title>
 <link>{{ site.url }}{{ site.baseurl }}</link>
 <language>{{ site.lang }}</language>
-<itunes:subtitle>{{ site.summary | xml_escape }}</itunes:subtitle>
 <itunes:author>{{ site.author }}</itunes:author>
-<itunes:summary>{{ site.description | xml_escape }}</itunes:summary>
+<itunes:summary>{{ site.summary | xml_escape }}</itunes:summary>
 <description>{{ site.description | xml_escape }}</description>
 <copyright>{{ site.time | date: "%Y" }} {{ site.title }}</copyright>
 <webMaster>{{ site.email }} ({{ site.author }})</webMaster>

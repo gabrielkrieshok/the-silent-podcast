@@ -1,0 +1,7 @@
+[build]
+  command = "bundle exec rake build"
+  publish = "_site"
+
+[context.production.environment]
+  BUNDLE_ENV = "production"
+  RUBY_VERSION = "2.7.0" # Adjust based on your Ruby version

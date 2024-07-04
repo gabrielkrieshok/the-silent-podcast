@@ -2,53 +2,83 @@
 
 # coding: utf-8
 require 'jekyll'
+require 'date'
+require 'active_support/core_ext'
 
 # Rake Jekyll tasks
 task :build do
 
-  desc 'create a new draft post'
+  desc 'create a new draft post if one does not exist for today'
 
-  require 'date'
-  require 'active_support/core_ext'
+  # Today's date and formatted date for the file
+  today_date = Date.today
+  slug = "#{today_date}-episode"
+  cleanDate = today_date.strftime("%B %-d, %Y")
 
-  $i = 0
-  $days = 30
-
-  Dir.foreach('_posts') do |f|
-    fn = File.join('_posts', f)
-    File.delete(fn) if f != '.' && f != '..'
-  end
-
-  while $i < $days  do
-
-  slug = "#{Date.today - $i.days}-episode"
-  cleanDate = (Date.today - $i.days).strftime("%B %-d, %Y")
-
+  # File path for today's post
   file = File.join(
     File.dirname(__FILE__),
     '_posts',
     slug + '.md'
   )
-  
 
-  File.open(file, "w") do |f|
-    f << <<-EOS.gsub(/^    /, '')
-    ---
-    layout: post
-    title: "The Silent Podcast — #{cleanDate}"
-    date: #{Date.today - $i.days} 06:00:00 -0500
-    file: "https://thesilentpodcast.s3.amazonaws.com/silent-track-#{$i}.mp3"
-    summary: "10 minutes of stillness for #{cleanDate}."
-    ---
-    EOS
+  # Check if the file already exists
+  unless File.exist?(file)
+    File.open(file, "w") do |f|
+      f << <<-EOS.gsub(/^    /, '')
+      ---
+      title: "The Silent Podcast — #{cleanDate}"
+      date: #{today_date} 06:00:00 -0500
+      file: "https://thesilentpodcast.s3.amazonaws.com/silent-track-#{today_date.strftime('%Y%m%d')}.mp3"
+      summary: "10 minutes of stillness for #{cleanDate}."
+      ---
+      EOS
+    end
+
+    system ("#{ENV['EDITOR']} #{file}")
+    puts("Creating Post for #{cleanDate}")
+  else
+    puts("Post for #{cleanDate} already exists.")
   end
-
-  system ("#{ENV['EDITOR']} #{file}")
-  puts("Creating Post for #{cleanDate}")
-
-  $i +=1
-end
 
   puts 'Building site...'
   Jekyll::Commands::Build.process(profile: true)
+end
+
+
+# Rake task to create posts for the past 30 days
+task :create_past_posts do
+
+  desc 'Create posts for the past 30 days if they do not exist'
+
+  (0..29).each do |i|
+    post_date = Date.today - i.days
+    slug = "#{post_date}-episode"
+    clean_date = post_date.strftime("%B %-d, %Y")
+
+    file = File.join(
+      File.dirname(__FILE__),
+      '_posts',
+      slug + '.md'
+    )
+
+    unless File.exist?(file)
+      File.open(file, "w") do |f|
+        f << <<~EOS.gsub(/^      /, '')
+        ---
+        title: "The Silent Podcast — #{clean_date}"
+        date: #{post_date} 06:00:00 -0500
+        file: "https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3"
+        summary: "10 minutes of stillness for #{clean_date}."
+        ---
+        EOS
+      end
+
+      puts("Creating Post for #{clean_date}")
+    else
+      puts("Post for #{clean_date} already exists.")
+    end
+  end
+
+  puts 'Finished creating posts for the past 30 days.'
 end

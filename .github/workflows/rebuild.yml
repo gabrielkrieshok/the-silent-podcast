@@ -1,18 +1,13 @@
-name: Rebuild Jekyll Site
+name: Trigger Netlify Build Daily
 
 on:
   schedule:
-    # Runs at 00:00 UTC every day
-    - cron: "0 0 * * *"
-  push:
-    branches:
-      - main
+    - cron: '0 6 * * *' # This will run at 6 AM UTC every day
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    if: github.event_name == 'schedule' || github.event.head_commit.message != 'rebuild pages'
 
     steps:
     - name: Checkout repository
@@ -21,31 +16,22 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.6.3
-
-    - name: Install Bundler
-      run: gem install bundler -v 2.4.22
+        ruby-version: '2.6.3' # or whichever version you're using
+        bundler-cache: true
 
     - name: Install dependencies
-      run: bundle install
-
-    - name: Clone repository into _site
-      run: git clone https://${GH_TOKEN}@github.com/gabrielkrieshok/thesilentpodcast.git _site
-      env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
-    - name: Run Jekyll rebuild script
       run: |
-        chmod +x ./script/jekyll-rebuild.sh
-        ./script/jekyll-rebuild.sh
+        bundle install
 
-    - name: Commit and push changes
+    - name: Run Rake task to create today's post
       run: |
-        cd _site
-        git config user.email "gabriel.krieshok@gmail.com"
-        git config user.name "gabrielkrieshok"
-        git add .
-        git commit -m "rebuild pages" || echo "No changes to commit"
-        git push origin main
+        bundle exec rake build
+
+    - name: Trigger Netlify Deploy
       env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      run: |
+        curl -X POST -H "Content-Type: application/json" \
+        -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
+        -d '{}' \
+        https://api.netlify.com/build_hooks/6686e6a33503705635e5a0fd
