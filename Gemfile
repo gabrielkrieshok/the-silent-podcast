@@ -10,7 +10,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 3.9"
 
-gem 'github-pages', '~> 230', group: :jekyll_plugins # Adjusted to an older version compatible with Ruby 2.7.6
+# gem 'github-pages', group: :jekyll_plugins # Adjusted to an older version compatible with Ruby 2.7.6
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "minima", "~> 2.0"
@@ -32,7 +32,7 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "rake", "~> 13.0.1"
 gem "webrick", "~> 1.7"
-gem 'activesupport', '~> 6.1' # Pin a compatible version of activesupport
+# gem 'activesupport', '~> 6.1' # Pin a compatible version of activesupport
 
 # gem install bundler -v 2.2.22
 # bundle _2.2.22_ install
