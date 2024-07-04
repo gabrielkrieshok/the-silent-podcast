@@ -4,4 +4,4 @@
 
 [context.production.environment]
   BUNDLE_ENV = "production"
-  RUBY_VERSION = "2.7.0" # Adjust based on your Ruby version
+  RUBY_VERSION = "3.0.3" # Adjust based on your Ruby version
