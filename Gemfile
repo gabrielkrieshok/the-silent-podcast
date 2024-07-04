@@ -35,3 +35,5 @@ gem "webrick", "~> 1.7"
 gem 'activesupport', '~> 6.1' # Pin a compatible version of activesupport
 
 # gem install bundler -v 2.2.22
+# bundle _2.2.22_ install
+
