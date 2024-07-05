@@ -16,7 +16,7 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.0' # or whichever version you're using
+        ruby-version: '3.0.2' # or whichever version you're using
 
     - name: Update RubyGems
       run: |
