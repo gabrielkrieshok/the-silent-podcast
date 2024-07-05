@@ -36,6 +36,7 @@ gem "activesupport"
 gem "kramdown-parser-gfm"
 gem "public_suffix"
 gem "ffi", "1.16.3"
+gem "sass-embedded", "1.62.1"
 
 
 # Ensure correct Ruby version
