@@ -35,6 +35,8 @@ gem "webrick"
 gem "activesupport"
 gem "kramdown-parser-gfm"
 gem "public_suffix"
+gem "ffi", "1.16.3"
+
 
 # Ensure correct Ruby version
 ruby '3.0.2'
