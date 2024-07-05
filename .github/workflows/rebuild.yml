@@ -19,9 +19,9 @@ jobs:
         ruby-version: '3.0.2' # or whichever version you're using
         bundler-cache: true
 
-    - name: Update RubyGems
+    - name: Update RubyGems to 3.3.22
       run: |
-        gem update --system
+        gem update --system 3.3.22
 
     - name: Install dependencies
       run: |
