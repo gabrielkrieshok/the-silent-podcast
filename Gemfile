@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.9"
+gem "jekyll"
 
 # gem 'github-pages', group: :jekyll_plugins # Adjusted to an older version compatible with Ruby 2.7.6
 
@@ -21,21 +21,23 @@ gem "jekyll", "~> 3.9"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.6"
+  gem "jekyll-feed"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Performance-booster for watching directories on Windows
-# gem "wdm", "~> 0.1.0" if Gem.win_platform?
+# gem "wdm", if Gem.win_platform?
 
-gem "rake", "~> 13.0.1"
-gem "webrick", "~> 1.7"
-gem 'activesupport', '~> 6.1' # Pin a compatible version of activesupport
+gem "rake"
+gem "webrick"
+gem "activesupport"
 gem "kramdown-parser-gfm"
-gem 'public_suffix', "~> 5.1.1"
+gem "public_suffix"
+gem "ffi", "1.16.3"
+gem "sass-embedded", "1.62.1"
 
-# gem install bundler -v 2.2.22
-# bundle _2.2.22_ install
 
+# Ensure correct Ruby version
+ruby '3.0.2'

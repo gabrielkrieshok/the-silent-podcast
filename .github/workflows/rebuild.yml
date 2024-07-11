@@ -13,20 +13,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '2.7.6' # or whichever version you're using
-        bundler-cache: true
-
-    - name: Install dependencies
-      run: |
-        bundle install
-
-    - name: Run Rake task to create today's post
-      run: |
-        bundle exec rake build
-
     - name: Trigger Netlify Deploy
       env:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

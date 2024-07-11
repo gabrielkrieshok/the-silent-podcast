@@ -1,7 +1,7 @@
 [build]
-  command = "bundle exec rake build --trace"
+  command = "bundle exec rake create_posts"
   publish = "_site"
 
 [context.production.environment]
   BUNDLE_ENV = "production"
-  RUBY_VERSION = "2.7.6" # Adjust based on your Ruby version
+  RUBY_VERSION = "3.0.2" # Adjust based on your Ruby version
