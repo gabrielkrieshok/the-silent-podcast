@@ -15,7 +15,7 @@ permalink: /:year-:month-:day.html
 # Timezone
 timezone: America/New_York
 
-future: false
+future: true
 
 # Build settings
 markdown: kramdown
