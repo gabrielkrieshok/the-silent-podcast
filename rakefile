@@ -41,4 +41,5 @@ task :create_posts do
   end
 
   puts 'Finished creating posts for the past 30 days.'
+  Jekyll::Commands::Build.process(profile: true)
 end
