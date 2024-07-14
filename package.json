@@ -9,7 +9,9 @@
   "author": "Gabriel Krieshok",
   "license": "MIT",
   "dependencies": {
+    "fast-xml-parser": "^4.4.0",
     "fs": "^0.0.1-security",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "xmlbuilder": "^15.1.1"
   }
 }

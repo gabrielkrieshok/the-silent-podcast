@@ -1,27 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-<atom:link href="https://thesilentpodcast.com/podcast.rss" rel="self" type="application/rss+xml" />
-
-<channel>
-
-<title>The Silent Podcast</title>
-<link>https://thesilentpodcast.com</link>
-<language>en-us</language>
-<itunes:author>Gabriel Krieshok</itunes:author>
-<itunes:summary>10 minutes of stillness in your day.</itunes:summary>
-<description>The Silent Podcast is a 10-minute pocket of stillness in your day. Listen to it at a set time every day, in the middle of a busy commute, or when you simply need a break from all of the hustle and bustle of distraction around you.</description>
-<copyright>2024 The Silent Podcast</copyright>
-<webMaster>Gabriel Krieshok</webMaster>
-<itunes:owner>
-    <itunes:name>Gabriel Krieshok</itunes:name>
-</itunes:owner>
-<itunes:explicit>no</itunes:explicit>
-<itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
-<itunes:category text="Health &amp; Fitness">
-    <itunes:category text="Mental Health" />
-</itunes:category>
-
-
+<?xml version="1.0"?>
+<rss>
+  <atom:link/>
+  <channel>
+    <title>The Silent Podcast</title>
+    <link>https://thesilentpodcast.com</link>
+    <language>en-us</language>
+    <itunes:author>Gabriel Krieshok</itunes:author>
+    <itunes:summary>10 minutes of stillness in your day.</itunes:summary>
+    <description>The Silent Podcast is a 10-minute pocket of stillness in your day. Listen to it at a set time every day, in the middle of a busy commute, or when you simply need a break from all of the hustle and bustle of distraction around you.</description>
+    <copyright>2024 The Silent Podcast</copyright>
+    <webMaster>Gabriel Krieshok</webMaster>
+    <itunes:owner>
+      <itunes:name>Gabriel Krieshok</itunes:name>
+    </itunes:owner>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image/>
+    <itunes:category>
+      <itunes:category/>
+    </itunes:category>
+    <item>
+      <title>The Silent Podcast — July 14, 2024</title>
+      <itunes:title>The Silent Podcast — July 14, 2024</itunes:title>
+      <itunes:subtitle>10 minutes of stillness in your day.</itunes:subtitle>
+      <itunes:author>Gabriel Krieshok</itunes:author>
+      <itunes:summary>10 minutes of stillness for July 14, 2024.</itunes:summary>
+      <description>10 minutes of stillness for July 14, 2024.</description>
+      <link>https://thesilentpodcast.com/2024-07-14.html</link>
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
+      <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
+      <pubDate>Sun, 14 Jul 2024 04:00:00 GMT</pubDate>
+      <itunes:duration>10:00</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <guid>https://thesilentpodcast.com/2024-07-14.html</guid>
+    </item>
     <item>
       <title>The Silent Podcast — July 13, 2024</title>
       <itunes:title>The Silent Podcast — July 13, 2024</itunes:title>
@@ -30,9 +41,9 @@
       <itunes:summary>10 minutes of stillness for July 13, 2024.</itunes:summary>
       <description>10 minutes of stillness for July 13, 2024.</description>
       <link>https://thesilentpodcast.com/2024-07-13.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Sat, 13 Jul 2024 00:43:05 GMT</pubDate>
+      <pubDate>Sat, 13 Jul 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-07-13.html</guid>
@@ -45,9 +56,9 @@
       <itunes:summary>10 minutes of stillness for July 12, 2024.</itunes:summary>
       <description>10 minutes of stillness for July 12, 2024.</description>
       <link>https://thesilentpodcast.com/2024-07-12.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Fri, 12 Jul 2024 00:43:05 GMT</pubDate>
+      <pubDate>Fri, 12 Jul 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-07-12.html</guid>
@@ -60,9 +71,9 @@
       <itunes:summary>10 minutes of stillness for July 11, 2024.</itunes:summary>
       <description>10 minutes of stillness for July 11, 2024.</description>
       <link>https://thesilentpodcast.com/2024-07-11.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Thu, 11 Jul 2024 00:43:05 GMT</pubDate>
+      <pubDate>Thu, 11 Jul 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-07-11.html</guid>
@@ -75,9 +86,9 @@
       <itunes:summary>10 minutes of stillness for July 10, 2024.</itunes:summary>
       <description>10 minutes of stillness for July 10, 2024.</description>
       <link>https://thesilentpodcast.com/2024-07-10.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Wed, 10 Jul 2024 00:43:05 GMT</pubDate>
+      <pubDate>Wed, 10 Jul 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-07-10.html</guid>
@@ -90,9 +101,9 @@
       <itunes:summary>10 minutes of stillness for July 9, 2024.</itunes:summary>
       <description>10 minutes of stillness for July 9, 2024.</description>
       <link>https://thesilentpodcast.com/2024-07-09.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Tue, 09 Jul 2024 00:43:05 GMT</pubDate>
+      <pubDate>Tue, 09 Jul 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-07-09.html</guid>
@@ -105,9 +116,9 @@
       <itunes:summary>10 minutes of stillness for July 8, 2024.</itunes:summary>
       <description>10 minutes of stillness for July 8, 2024.</description>
       <link>https://thesilentpodcast.com/2024-07-08.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Mon, 08 Jul 2024 00:43:05 GMT</pubDate>
+      <pubDate>Mon, 08 Jul 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-07-08.html</guid>
@@ -120,9 +131,9 @@
       <itunes:summary>10 minutes of stillness for July 7, 2024.</itunes:summary>
       <description>10 minutes of stillness for July 7, 2024.</description>
       <link>https://thesilentpodcast.com/2024-07-07.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Sun, 07 Jul 2024 00:43:05 GMT</pubDate>
+      <pubDate>Sun, 07 Jul 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-07-07.html</guid>
@@ -135,9 +146,9 @@
       <itunes:summary>10 minutes of stillness for July 6, 2024.</itunes:summary>
       <description>10 minutes of stillness for July 6, 2024.</description>
       <link>https://thesilentpodcast.com/2024-07-06.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Sat, 06 Jul 2024 00:43:05 GMT</pubDate>
+      <pubDate>Sat, 06 Jul 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-07-06.html</guid>
@@ -150,9 +161,9 @@
       <itunes:summary>10 minutes of stillness for July 5, 2024.</itunes:summary>
       <description>10 minutes of stillness for July 5, 2024.</description>
       <link>https://thesilentpodcast.com/2024-07-05.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Fri, 05 Jul 2024 00:43:05 GMT</pubDate>
+      <pubDate>Fri, 05 Jul 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-07-05.html</guid>
@@ -165,9 +176,9 @@
       <itunes:summary>10 minutes of stillness for July 4, 2024.</itunes:summary>
       <description>10 minutes of stillness for July 4, 2024.</description>
       <link>https://thesilentpodcast.com/2024-07-04.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Thu, 04 Jul 2024 00:43:05 GMT</pubDate>
+      <pubDate>Thu, 04 Jul 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-07-04.html</guid>
@@ -180,9 +191,9 @@
       <itunes:summary>10 minutes of stillness for July 3, 2024.</itunes:summary>
       <description>10 minutes of stillness for July 3, 2024.</description>
       <link>https://thesilentpodcast.com/2024-07-03.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Wed, 03 Jul 2024 00:43:05 GMT</pubDate>
+      <pubDate>Wed, 03 Jul 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-07-03.html</guid>
@@ -195,9 +206,9 @@
       <itunes:summary>10 minutes of stillness for July 2, 2024.</itunes:summary>
       <description>10 minutes of stillness for July 2, 2024.</description>
       <link>https://thesilentpodcast.com/2024-07-02.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Tue, 02 Jul 2024 00:43:05 GMT</pubDate>
+      <pubDate>Tue, 02 Jul 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-07-02.html</guid>
@@ -210,9 +221,9 @@
       <itunes:summary>10 minutes of stillness for July 1, 2024.</itunes:summary>
       <description>10 minutes of stillness for July 1, 2024.</description>
       <link>https://thesilentpodcast.com/2024-07-01.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Mon, 01 Jul 2024 00:43:05 GMT</pubDate>
+      <pubDate>Mon, 01 Jul 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-07-01.html</guid>
@@ -225,9 +236,9 @@
       <itunes:summary>10 minutes of stillness for June 30, 2024.</itunes:summary>
       <description>10 minutes of stillness for June 30, 2024.</description>
       <link>https://thesilentpodcast.com/2024-06-30.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Sun, 30 Jun 2024 00:43:05 GMT</pubDate>
+      <pubDate>Sun, 30 Jun 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-06-30.html</guid>
@@ -240,9 +251,9 @@
       <itunes:summary>10 minutes of stillness for June 29, 2024.</itunes:summary>
       <description>10 minutes of stillness for June 29, 2024.</description>
       <link>https://thesilentpodcast.com/2024-06-29.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Sat, 29 Jun 2024 00:43:05 GMT</pubDate>
+      <pubDate>Sat, 29 Jun 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-06-29.html</guid>
@@ -255,9 +266,9 @@
       <itunes:summary>10 minutes of stillness for June 28, 2024.</itunes:summary>
       <description>10 minutes of stillness for June 28, 2024.</description>
       <link>https://thesilentpodcast.com/2024-06-28.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Fri, 28 Jun 2024 00:43:05 GMT</pubDate>
+      <pubDate>Fri, 28 Jun 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-06-28.html</guid>
@@ -270,9 +281,9 @@
       <itunes:summary>10 minutes of stillness for June 27, 2024.</itunes:summary>
       <description>10 minutes of stillness for June 27, 2024.</description>
       <link>https://thesilentpodcast.com/2024-06-27.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Thu, 27 Jun 2024 00:43:05 GMT</pubDate>
+      <pubDate>Thu, 27 Jun 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-06-27.html</guid>
@@ -285,9 +296,9 @@
       <itunes:summary>10 minutes of stillness for June 26, 2024.</itunes:summary>
       <description>10 minutes of stillness for June 26, 2024.</description>
       <link>https://thesilentpodcast.com/2024-06-26.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Wed, 26 Jun 2024 00:43:05 GMT</pubDate>
+      <pubDate>Wed, 26 Jun 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-06-26.html</guid>
@@ -300,9 +311,9 @@
       <itunes:summary>10 minutes of stillness for June 25, 2024.</itunes:summary>
       <description>10 minutes of stillness for June 25, 2024.</description>
       <link>https://thesilentpodcast.com/2024-06-25.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Tue, 25 Jun 2024 00:43:05 GMT</pubDate>
+      <pubDate>Tue, 25 Jun 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-06-25.html</guid>
@@ -315,9 +326,9 @@
       <itunes:summary>10 minutes of stillness for June 24, 2024.</itunes:summary>
       <description>10 minutes of stillness for June 24, 2024.</description>
       <link>https://thesilentpodcast.com/2024-06-24.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Mon, 24 Jun 2024 00:43:05 GMT</pubDate>
+      <pubDate>Mon, 24 Jun 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-06-24.html</guid>
@@ -330,9 +341,9 @@
       <itunes:summary>10 minutes of stillness for June 23, 2024.</itunes:summary>
       <description>10 minutes of stillness for June 23, 2024.</description>
       <link>https://thesilentpodcast.com/2024-06-23.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Sun, 23 Jun 2024 00:43:05 GMT</pubDate>
+      <pubDate>Sun, 23 Jun 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-06-23.html</guid>
@@ -345,9 +356,9 @@
       <itunes:summary>10 minutes of stillness for June 22, 2024.</itunes:summary>
       <description>10 minutes of stillness for June 22, 2024.</description>
       <link>https://thesilentpodcast.com/2024-06-22.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Sat, 22 Jun 2024 00:43:05 GMT</pubDate>
+      <pubDate>Sat, 22 Jun 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-06-22.html</guid>
@@ -360,9 +371,9 @@
       <itunes:summary>10 minutes of stillness for June 21, 2024.</itunes:summary>
       <description>10 minutes of stillness for June 21, 2024.</description>
       <link>https://thesilentpodcast.com/2024-06-21.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Fri, 21 Jun 2024 00:43:05 GMT</pubDate>
+      <pubDate>Fri, 21 Jun 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-06-21.html</guid>
@@ -375,9 +386,9 @@
       <itunes:summary>10 minutes of stillness for June 20, 2024.</itunes:summary>
       <description>10 minutes of stillness for June 20, 2024.</description>
       <link>https://thesilentpodcast.com/2024-06-20.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Thu, 20 Jun 2024 00:43:05 GMT</pubDate>
+      <pubDate>Thu, 20 Jun 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-06-20.html</guid>
@@ -390,9 +401,9 @@
       <itunes:summary>10 minutes of stillness for June 19, 2024.</itunes:summary>
       <description>10 minutes of stillness for June 19, 2024.</description>
       <link>https://thesilentpodcast.com/2024-06-19.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Wed, 19 Jun 2024 00:43:05 GMT</pubDate>
+      <pubDate>Wed, 19 Jun 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-06-19.html</guid>
@@ -405,9 +416,9 @@
       <itunes:summary>10 minutes of stillness for June 18, 2024.</itunes:summary>
       <description>10 minutes of stillness for June 18, 2024.</description>
       <link>https://thesilentpodcast.com/2024-06-18.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Tue, 18 Jun 2024 00:43:05 GMT</pubDate>
+      <pubDate>Tue, 18 Jun 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-06-18.html</guid>
@@ -420,9 +431,9 @@
       <itunes:summary>10 minutes of stillness for June 17, 2024.</itunes:summary>
       <description>10 minutes of stillness for June 17, 2024.</description>
       <link>https://thesilentpodcast.com/2024-06-17.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Mon, 17 Jun 2024 00:43:05 GMT</pubDate>
+      <pubDate>Mon, 17 Jun 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-06-17.html</guid>
@@ -435,9 +446,9 @@
       <itunes:summary>10 minutes of stillness for June 16, 2024.</itunes:summary>
       <description>10 minutes of stillness for June 16, 2024.</description>
       <link>https://thesilentpodcast.com/2024-06-16.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Sun, 16 Jun 2024 00:43:05 GMT</pubDate>
+      <pubDate>Sun, 16 Jun 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-06-16.html</guid>
@@ -450,13 +461,12 @@
       <itunes:summary>10 minutes of stillness for June 15, 2024.</itunes:summary>
       <description>10 minutes of stillness for June 15, 2024.</description>
       <link>https://thesilentpodcast.com/2024-06-15.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
       <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Sat, 15 Jun 2024 00:43:05 GMT</pubDate>
+      <pubDate>Sat, 15 Jun 2024 04:00:00 GMT</pubDate>
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-06-15.html</guid>
     </item>
-
-</channel>
+  </channel>
 </rss>
