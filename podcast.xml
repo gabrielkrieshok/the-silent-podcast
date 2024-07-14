@@ -1,6 +1,6 @@
-<?xml version="1.0"?>
-<rss>
-  <atom:link/>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2">
+  <atom:link href="https://thesilentpodcast.com/podcast.rss" rel="self" type="application/rss+xml"/>
   <channel>
     <title>The Silent Podcast</title>
     <link>https://thesilentpodcast.com</link>

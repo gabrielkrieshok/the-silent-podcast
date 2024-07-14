@@ -42,11 +42,11 @@ function generateItems() {
       description: `10 minutes of stillness for ${formattedDate}.`,
       link: `https://thesilentpodcast.com/${datePath}.html`,
       'itunes:image': {
-        '@href': 'https://thesilentpodcast.com/images/logo.jpg'
+        '@_href': 'https://thesilentpodcast.com/images/logo.jpg'
       },
       enclosure: {
-        '@url': 'https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3',
-        '@type': 'audio/mp3'
+        '@_url': 'https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3',
+        '@_type': 'audio/mp3'
       },
       pubDate: pubDate,
       'itunes:duration': '10:00',
@@ -59,15 +59,67 @@ function generateItems() {
 
 // Read and parse the existing RSS file
 const rssContent = fs.readFileSync(rssFilePath, 'utf8');
-const parser = new xmlparser.XMLParser();
+const parser = new xmlparser.XMLParser({
+    ignoreAttributes: false,
+    attributeNamePrefix: "@_",
+    parseAttributeValue: true
+});
 const rss = parser.parse(rssContent);
 
 // Update the channel items with newly generated items
 rss.rss.channel.item = generateItems();
+if (!Array.isArray(rss.rss.channel.item)) {
+  rss.rss.channel.item = [rss.rss.channel.item];
+}
 
-// Convert the updated object back to XML
-const builder = new xmlbuilder.create('rss');
-const xmlString = builder.element(rss.rss).end({ pretty: true });
+// Create a new XML document with the correct structure and namespaces
+const xml = xmlbuilder.create('rss', { version: '1.0', encoding: 'UTF-8' })
+  .att('xmlns:itunes', 'http://www.itunes.com/dtds/podcast-1.0.dtd')
+  .att('xmlns:atom', 'http://www.w3.org/2005/Atom')
+  .att('version', '2.0');
+
+// Function to recursively build the XML structure
+function buildXml(parent, obj) {
+  for (const key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      if (key === 'atom:link' && parent.name === 'channel') {
+        // Special handling for atom:link to prevent duplication
+        if (!Array.isArray(obj[key])) {
+          obj[key] = [obj[key]];
+        }
+        obj[key].forEach(link => {
+          parent.ele('atom:link', {
+            href: link['@_href'],
+            rel: link['@_rel'],
+            type: link['@_type']
+          });
+        });
+      } else if (key.startsWith('@_')) {
+        // It's an attribute
+        parent.att(key.slice(2), obj[key]);
+      } else if (Array.isArray(obj[key])) {
+        // It's an array of elements
+        obj[key].forEach(item => {
+          const child = parent.ele(key);
+          buildXml(child, item);
+        });
+      } else if (typeof obj[key] === 'object') {
+        // It's a nested element
+        const child = parent.ele(key);
+        buildXml(child, obj[key]);
+      } else {
+        // It's a simple element
+        parent.ele(key, obj[key]);
+      }
+    }
+  }
+}
+
+// Build the rest of the XML structure
+buildXml(xml, rss.rss);
+
+// Convert the XML to a string
+const xmlString = xml.end({ pretty: true, indent: '  ', newline: '\n' });
 
 // Write the updated RSS content back to the file
 fs.writeFileSync(rssFilePath, xmlString, 'utf8');
