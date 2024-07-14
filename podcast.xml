@@ -21,21 +21,7 @@
     <itunes:category text="Mental Health" />
 </itunes:category>
 
-<item>
-    <title>The Silent Podcast — July 5, 2024</title>
-    <itunes:title>The Silent Podcast — July 5, 2024</itunes:title>
-    <itunes:subtitle>10 minutes of stillness in your day.</itunes:subtitle>
-    <itunes:author>Gabriel Krieshok</itunes:author>
-    <itunes:summary>10 minutes of stillness for July 5, 2024.</itunes:summary>
-    <description>10 minutes of stillness for July 5, 2024.</description>
-    <link>https://thesilentpodcast.com/2024-07-05.html</link>
-    <itunes:image href="https://thesilentpodcast.com/images/logo.jpg" />
-    <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-    <pubDate>Fri, 05 Jul 2024 07:00:00 -0400</pubDate>
-    <itunes:duration>10:00</itunes:duration>
-    <itunes:explicit>no</itunes:explicit>
-    <guid>https://thesilentpodcast.com/2024-07-05.html</guid>
-</item>
+${generateItems()}
 
 </channel>
 </rss>
