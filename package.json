@@ -1,0 +1,15 @@
+{
+  "name": "the-silent-podcast",
+  "version": "1.0.0",
+  "description": "The Silent Podcast is a 10-minute pocket of stillness in your day. Listen to it at a set time every day, in the middle of a busy commute, or when you simply need a break from all of the hustle and bustle of distraction around you.",
+  "main": "update-rss.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Krieshok",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
