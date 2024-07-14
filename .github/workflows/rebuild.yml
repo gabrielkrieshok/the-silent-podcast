@@ -1,8 +1,11 @@
-name: Trigger Netlify Build Daily
+name: Update RSS Feed and Trigger Netlify Build Daily
 
 on:
   schedule:
-    - cron: '0 6 * * *' # This will run at 6 AM UTC every day
+    - cron: '0 11 * * *' # This will run at 6 AM ET during Standard Time and 7 AM ET during Daylight Saving Time
+  push:
+    branches:
+      - main
   workflow_dispatch: # Allows manual trigger
 
 jobs:
@@ -11,13 +14,32 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
-    - name: Trigger Netlify Deploy
-      env:
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+    - name: Set up Node.js environment
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Update RSS Feed
+      run: node update-rss.js # This is your custom script to update the RSS file
+
+    - name: Commit and push changes
       run: |
-        curl -X POST -H "Content-Type: application/json" \
-        -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
-        -d '{}' \
-        https://api.netlify.com/build_hooks/6686e6a33503705635e5a0fd
+        git config --global user.name 'gabrielkrieshok'
+        git config --global user.email 'gabriel.krieshok@gmail.com'
+        git add .
+        git commit -m 'Automated RSS Feed update'
+        git push
+
+    # - name: Trigger Netlify Deploy
+    #   env:
+    #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+    #   run: |
+    #     curl -X POST -H "Content-Type: application/json" \
+    #     -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
+    #     -d '{}' \
+    #     https://api.netlify.com/build_hooks/6686e6a33503705635e5a0fd
