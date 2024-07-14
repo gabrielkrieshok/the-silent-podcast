@@ -17,7 +17,7 @@ function formatDate(date) {
 function generateItems() {
   let items = '';
   const today = new Date();
-  for (let i = 0; i < 30; i++) {
+  for (let i = 1; i <= 30; i++) {  // Start from 1 to avoid including tomorrow
     const date = new Date(today);
     date.setDate(today.getDate() - i);
     const formattedDate = formatDate(date);
