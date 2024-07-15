@@ -19,6 +19,21 @@
       <itunes:category/>
     </itunes:category>
     <item>
+      <title>The Silent Podcast — July 15, 2024</title>
+      <itunes:title>The Silent Podcast — July 15, 2024</itunes:title>
+      <itunes:subtitle>10 minutes of stillness in your day.</itunes:subtitle>
+      <itunes:author>Gabriel Krieshok</itunes:author>
+      <itunes:summary>10 minutes of stillness for July 15, 2024.</itunes:summary>
+      <description>10 minutes of stillness for July 15, 2024.</description>
+      <link>https://thesilentpodcast.com/2024-07-15.html</link>
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
+      <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
+      <pubDate>Mon, 15 Jul 2024 00:00:00 GMT</pubDate>
+      <itunes:duration>10:00</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <guid>https://thesilentpodcast.com/2024-07-15.html</guid>
+    </item>
+    <item>
       <title>The Silent Podcast — July 14, 2024</title>
       <itunes:title>The Silent Podcast — July 14, 2024</itunes:title>
       <itunes:subtitle>10 minutes of stillness in your day.</itunes:subtitle>
@@ -452,21 +467,6 @@
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <guid>https://thesilentpodcast.com/2024-06-16.html</guid>
-    </item>
-    <item>
-      <title>The Silent Podcast — June 15, 2024</title>
-      <itunes:title>The Silent Podcast — June 15, 2024</itunes:title>
-      <itunes:subtitle>10 minutes of stillness in your day.</itunes:subtitle>
-      <itunes:author>Gabriel Krieshok</itunes:author>
-      <itunes:summary>10 minutes of stillness for June 15, 2024.</itunes:summary>
-      <description>10 minutes of stillness for June 15, 2024.</description>
-      <link>https://thesilentpodcast.com/2024-06-15.html</link>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
-      <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3" type="audio/mp3"/>
-      <pubDate>Sat, 15 Jun 2024 00:00:00 GMT</pubDate>
-      <itunes:duration>10:00</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <guid>https://thesilentpodcast.com/2024-06-15.html</guid>
     </item>
   </channel>
 </rss>
