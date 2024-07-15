@@ -17,7 +17,7 @@ function formatDate(date) {
 function generateItems() {
   const items = []; // Ensure items is initialized as an array
   const today = new Date();
-  today.setHours(0, 0, 0, 0);  // Set to beginning of the day
+  today.setHours(6, 0, 0, 0);  // Set to beginning of the day
 
   // Loop through the past 30 days
   for (let i = 0; i < 30; i++) {
