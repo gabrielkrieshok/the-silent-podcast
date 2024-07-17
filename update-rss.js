@@ -46,12 +46,13 @@ function generateItems() {
       },
       enclosure: {
         '@_url': 'https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3',
-        '@_type': 'audio/mp3'
+        '@_type': 'audio/mp3',
+        '@_length': '4972465'
       },
       pubDate: pubDate,
       'itunes:duration': '10:00',
-      'itunes:explicit': 'no',
-      guid: `https://thesilentpodcast.com/${datePath}.html`
+      'itunes:explicit': 'false',
+      guid: `https://thesilentpodcast.com/#${datePath}`
     });
   }
   return items;
