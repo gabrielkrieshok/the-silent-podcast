@@ -40,7 +40,6 @@ function generateItems() {
       'itunes:author': 'Gabriel Krieshok',
       'itunes:summary': `10 minutes of stillness for ${formattedDate}.`,
       description: `10 minutes of stillness for ${formattedDate}.`,
-      link: `https://thesilentpodcast.com/${datePath}.html`,
       'itunes:image': {
         '@_href': 'https://thesilentpodcast.com/images/logo.jpg'
       },
@@ -77,6 +76,7 @@ if (!Array.isArray(rss.rss.channel.item)) {
 const xml = xmlbuilder.create('rss', { version: '1.0', encoding: 'UTF-8' })
   .att('xmlns:itunes', 'http://www.itunes.com/dtds/podcast-1.0.dtd')
   .att('xmlns:atom', 'http://www.w3.org/2005/Atom')
+  .att('xmlns:content', 'http://purl.org/rss/1.0/modules/content/')
   .att('version', '2.0');
 
 // Function to recursively build the XML structure
