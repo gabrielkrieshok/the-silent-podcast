@@ -32,6 +32,9 @@ function generateItems() {
     const pubDate = date.toUTCString();
     const datePath = date.toISOString().split('T')[0];
 
+   // Generate a unique URL for each episode
+   const uniqueUrl = `https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3?date=${datePath}`;
+
     // Generate the object for a single item (episode)
     items.push({
       title: `The Silent Podcast — ${formattedDate}`,
@@ -44,7 +47,7 @@ function generateItems() {
         '@_href': 'https://thesilentpodcast.com/images/logo.jpg'
       },
       enclosure: {
-        '@_url': 'https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3',
+        '@_url': uniqueUrl,
         '@_type': 'audio/mp3',
         '@_length': '4972465'
       },
