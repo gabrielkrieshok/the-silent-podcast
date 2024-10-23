@@ -19,6 +19,20 @@
       <itunes:category text="Mental Health"/>
     </itunes:category>
     <item>
+      <title>The Silent Podcast — October 23, 2024</title>
+      <itunes:title>The Silent Podcast — October 23, 2024</itunes:title>
+      <itunes:subtitle>10 minutes of stillness in your day.</itunes:subtitle>
+      <itunes:author>Gabriel Krieshok</itunes:author>
+      <itunes:summary>10 minutes of stillness for October 23, 2024.</itunes:summary>
+      <description>10 minutes of stillness for October 23, 2024.</description>
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
+      <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3?date=2024-10-23" type="audio/mp3" length="4972465"/>
+      <pubDate>Wed, 23 Oct 2024 10:00:00 GMT</pubDate>
+      <itunes:duration>10:00</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <guid>https://thesilentpodcast.com/#2024-10-23</guid>
+    </item>
+    <item>
       <title>The Silent Podcast — October 22, 2024</title>
       <itunes:title>The Silent Podcast — October 22, 2024</itunes:title>
       <itunes:subtitle>10 minutes of stillness in your day.</itunes:subtitle>
@@ -423,20 +437,6 @@
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <guid>https://thesilentpodcast.com/#2024-09-24</guid>
-    </item>
-    <item>
-      <title>The Silent Podcast — September 23, 2024</title>
-      <itunes:title>The Silent Podcast — September 23, 2024</itunes:title>
-      <itunes:subtitle>10 minutes of stillness in your day.</itunes:subtitle>
-      <itunes:author>Gabriel Krieshok</itunes:author>
-      <itunes:summary>10 minutes of stillness for September 23, 2024.</itunes:summary>
-      <description>10 minutes of stillness for September 23, 2024.</description>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
-      <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3?date=2024-09-23" type="audio/mp3" length="4972465"/>
-      <pubDate>Mon, 23 Sep 2024 10:00:00 GMT</pubDate>
-      <itunes:duration>10:00</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-      <guid>https://thesilentpodcast.com/#2024-09-23</guid>
     </item>
   </channel>
 </rss>
