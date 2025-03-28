@@ -19,6 +19,20 @@
       <itunes:category text="Mental Health"/>
     </itunes:category>
     <item>
+      <title>The Silent Podcast — March 28, 2025</title>
+      <itunes:title>The Silent Podcast — March 28, 2025</itunes:title>
+      <itunes:subtitle>10 minutes of stillness in your day.</itunes:subtitle>
+      <itunes:author>Gabriel Krieshok</itunes:author>
+      <itunes:summary>10 minutes of stillness for March 28, 2025.</itunes:summary>
+      <description>10 minutes of stillness for March 28, 2025.</description>
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
+      <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3?date=2025-03-28" type="audio/mp3" length="4972465"/>
+      <pubDate>Fri, 28 Mar 2025 10:00:00 GMT</pubDate>
+      <itunes:duration>10:00</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <guid>https://thesilentpodcast.com/#2025-03-28</guid>
+    </item>
+    <item>
       <title>The Silent Podcast — March 27, 2025</title>
       <itunes:title>The Silent Podcast — March 27, 2025</itunes:title>
       <itunes:subtitle>10 minutes of stillness in your day.</itunes:subtitle>
@@ -423,20 +437,6 @@
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <guid>https://thesilentpodcast.com/#2025-02-27</guid>
-    </item>
-    <item>
-      <title>The Silent Podcast — February 26, 2025</title>
-      <itunes:title>The Silent Podcast — February 26, 2025</itunes:title>
-      <itunes:subtitle>10 minutes of stillness in your day.</itunes:subtitle>
-      <itunes:author>Gabriel Krieshok</itunes:author>
-      <itunes:summary>10 minutes of stillness for February 26, 2025.</itunes:summary>
-      <description>10 minutes of stillness for February 26, 2025.</description>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
-      <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3?date=2025-02-26" type="audio/mp3" length="4972465"/>
-      <pubDate>Wed, 26 Feb 2025 10:00:00 GMT</pubDate>
-      <itunes:duration>10:00</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-      <guid>https://thesilentpodcast.com/#2025-02-26</guid>
     </item>
   </channel>
 </rss>
