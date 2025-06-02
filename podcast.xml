@@ -19,6 +19,20 @@
       <itunes:category text="Mental Health"/>
     </itunes:category>
     <item>
+      <title>The Silent Podcast — June 2, 2025</title>
+      <itunes:title>The Silent Podcast — June 2, 2025</itunes:title>
+      <itunes:subtitle>10 minutes of stillness in your day.</itunes:subtitle>
+      <itunes:author>Gabriel Krieshok</itunes:author>
+      <itunes:summary>10 minutes of stillness for June 2, 2025.</itunes:summary>
+      <description>10 minutes of stillness for June 2, 2025.</description>
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
+      <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3?date=2025-06-02" type="audio/mp3" length="4972465"/>
+      <pubDate>Mon, 02 Jun 2025 10:00:00 GMT</pubDate>
+      <itunes:duration>10:00</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <guid>https://thesilentpodcast.com/#2025-06-02</guid>
+    </item>
+    <item>
       <title>The Silent Podcast — June 1, 2025</title>
       <itunes:title>The Silent Podcast — June 1, 2025</itunes:title>
       <itunes:subtitle>10 minutes of stillness in your day.</itunes:subtitle>
@@ -423,20 +437,6 @@
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <guid>https://thesilentpodcast.com/#2025-05-04</guid>
-    </item>
-    <item>
-      <title>The Silent Podcast — May 3, 2025</title>
-      <itunes:title>The Silent Podcast — May 3, 2025</itunes:title>
-      <itunes:subtitle>10 minutes of stillness in your day.</itunes:subtitle>
-      <itunes:author>Gabriel Krieshok</itunes:author>
-      <itunes:summary>10 minutes of stillness for May 3, 2025.</itunes:summary>
-      <description>10 minutes of stillness for May 3, 2025.</description>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
-      <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3?date=2025-05-03" type="audio/mp3" length="4972465"/>
-      <pubDate>Sat, 03 May 2025 10:00:00 GMT</pubDate>
-      <itunes:duration>10:00</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-      <guid>https://thesilentpodcast.com/#2025-05-03</guid>
     </item>
   </channel>
 </rss>
