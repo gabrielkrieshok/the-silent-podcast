@@ -19,6 +19,20 @@
       <itunes:category text="Mental Health"/>
     </itunes:category>
     <item>
+      <title>The Silent Podcast — November 14, 2025</title>
+      <itunes:title>The Silent Podcast — November 14, 2025</itunes:title>
+      <itunes:subtitle>10 minutes of stillness in your day.</itunes:subtitle>
+      <itunes:author>Gabriel Krieshok</itunes:author>
+      <itunes:summary>10 minutes of stillness for November 14, 2025.</itunes:summary>
+      <description>10 minutes of stillness for November 14, 2025.</description>
+      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
+      <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3?date=2025-11-14" type="audio/mp3" length="4972465"/>
+      <pubDate>Fri, 14 Nov 2025 10:00:00 GMT</pubDate>
+      <itunes:duration>10:00</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <guid>https://thesilentpodcast.com/#2025-11-14</guid>
+    </item>
+    <item>
       <title>The Silent Podcast — November 13, 2025</title>
       <itunes:title>The Silent Podcast — November 13, 2025</itunes:title>
       <itunes:subtitle>10 minutes of stillness in your day.</itunes:subtitle>
@@ -423,20 +437,6 @@
       <itunes:duration>10:00</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <guid>https://thesilentpodcast.com/#2025-10-16</guid>
-    </item>
-    <item>
-      <title>The Silent Podcast — October 15, 2025</title>
-      <itunes:title>The Silent Podcast — October 15, 2025</itunes:title>
-      <itunes:subtitle>10 minutes of stillness in your day.</itunes:subtitle>
-      <itunes:author>Gabriel Krieshok</itunes:author>
-      <itunes:summary>10 minutes of stillness for October 15, 2025.</itunes:summary>
-      <description>10 minutes of stillness for October 15, 2025.</description>
-      <itunes:image href="https://thesilentpodcast.com/images/logo.jpg"/>
-      <enclosure url="https://thesilentpodcast.s3.amazonaws.com/the-silent-podcast-episode-track.mp3?date=2025-10-15" type="audio/mp3" length="4972465"/>
-      <pubDate>Wed, 15 Oct 2025 10:00:00 GMT</pubDate>
-      <itunes:duration>10:00</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-      <guid>https://thesilentpodcast.com/#2025-10-15</guid>
     </item>
   </channel>
 </rss>
